@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amazon login page</title>
+</head>
+<body>
+  <h2>Create Account</h2>
+  <form action="">
+    <div>
+      <label for="firstname">Your name</label> <br>
+      <input autocomplete="off" required  name ="firstname" id="firstname" type="text" placeholder="First and Last name">
+    </div>
+    <div>
+      <label for="mobileNumber">Mobile number</label> <br>
+      <select multiple name = "countryCode" >
+        <option value="egypt">Egypt +20</option>
+        <option value="india">India +91</option>
+        <option value="america">America +234</option>
+      </select>
+      <input disabled required name = "mobile" id="mobileNumber" placeholder="Mobile number" type="text">
+    </div>
+    <div>
+      <label for="email">Email (optional)</label> <br>
+      <input id="email" type="email" >
+    </div>
+     <div>
+      <label for="password">Password</label> <br>
+      <input required id="password" type="password" >
+    </div>
+    <div>
+      <input type="color">
+    </div>
+    <div>
+      <input type="file">
+    </div>
+    <div>
+      <input type="date">
+    </div>
+    <div>
+      <input type="datetime-local">
+    </div>
+    <div>
+      <input type="month">
+    </div>
+    <div>
+      <input type="week">
+    </div>
+    <div>
+      <input type="reset">
+    </div>
+    <div>
+      <input type="range">
+    </div>
+    <div>
+      <input type="checkbox">
+    </div>
+    <div>
+      select Gender:
+      Male :<input type="radio" name="gender" >
+      FeMale :<input type="radio" name="gender" >
+      Others :<input type="radio" name="gender" >
+    </div>
+    <p>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Amazon. Message and data rates may apply.</p>
+    <!-- <button>Continue</button> -->
+    <!-- <input type="button" value = "Continue" > -->
+    <input type="submit" value = "Continue">
+  </form>
+  
+</body>
+</html>
