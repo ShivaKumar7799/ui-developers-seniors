@@ -1,0 +1,29 @@
+#translate{
+  border: 1px solid blue;
+  /* transform: translateX(200px); */
+  /* transform: translateY(50px); */
+  transform: translate(30px,10px);
+}
+
+#rotate{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+}
+
+#scale{
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  transform: scale(1.5);
+}
+
+#skew{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  /* transform: skewX(20deg); */
+  transform: skewY(-40deg);
+}
