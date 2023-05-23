@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+
+  <form id="formId" name="myForm"  >
+   UserName: <input type="name" id="name"/> <br>
+    <p id="nameErrorMsg" ></p>
+   Password: <input type="password" id="password"> <br>
+    <p id="passwordErrorMsg" ></p>
+    <input type="submit" value="submit"> 
+  </form>
+
+  <div id="nextPage" style="display : none" >
+      <p>login successful</p>
+  </div>
+
+  <script>
+    var form=document.getElementById("formId");
+    function validateForm(event){
+      event.preventDefault()
+      var name = document.getElementById("name").value;
+      var password = Number(document.getElementById("password").value);
+      var emailElement = document.getElementById("nameErrorMsg")
+      console.log(name,password)
+      if(name !== "rajesh"){
+        console.log("please enter correct user name");
+        emailElement.innerHTML = "Please enter correct user name"
+        emailElement.style.color = "red"
+        return
+      }else {
+        emailElement.style.display = "none"
+      }
+       var passwordElement = document.getElementById("passwordErrorMsg")
+      if(password !== 1234){
+        console.log("please enter correct password")
+        passwordElement.innerHTML = "Please enter correct password"
+        passwordElement.style.color = "red"
+        return
+      }else {
+        passwordElement.style.display = "none"
+      }
+      form.style.display = "none"
+      document.getElementById("nextPage").style.display = "block"
+    }
+    form.addEventListener('submit', validateForm);
+  </script>
+</body>
+</html>
