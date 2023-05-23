@@ -9,7 +9,7 @@ console.log("hello, Good Morning");
 
 // 3) Displaying output in alert box
 
-alert("hii, Good afternoon");
+// alert("hii, Good afternoon");
 
 // 4) Displaying output in print format 
 
@@ -17,6 +17,8 @@ alert("hii, Good afternoon");
 
 // 5) printing output and removing existing html 
 
-document.write("Hello, how are you")
+function hello(){
+  document.write("<h2>hello asdfksadf sadkfjsadkf </h2>")
+}
 
-
+// document.write("<h2> Hello </h2>")
