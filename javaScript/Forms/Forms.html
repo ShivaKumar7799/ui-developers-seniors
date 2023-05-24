@@ -21,6 +21,7 @@
   </div>
 
   <script>
+
     var form=document.getElementById("formId");
     function validateForm(event){
       event.preventDefault()
@@ -28,6 +29,7 @@
       var password = Number(document.getElementById("password").value);
       var emailElement = document.getElementById("nameErrorMsg")
       console.log(name,password)
+      
       if(name !== "rajesh"){
         console.log("please enter correct user name");
         emailElement.innerHTML = "Please enter correct user name"
@@ -36,6 +38,7 @@
       }else {
         emailElement.style.display = "none"
       }
+      
        var passwordElement = document.getElementById("passwordErrorMsg")
       if(password !== 1234){
         console.log("please enter correct password")
@@ -45,6 +48,8 @@
       }else {
         passwordElement.style.display = "none"
       }
+
+
       form.style.display = "none"
       document.getElementById("nextPage").style.display = "block"
     }
