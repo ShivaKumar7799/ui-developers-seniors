@@ -62,3 +62,36 @@ console.log(lotteryRegistedMembers[Math.floor(lotteryWinningPerson * 5)] , " - l
 
 const price = 1237.12376545454545;
 console.log(price.toFixed(3))
+
+// Number
+
+var newStudents = "25";
+var oldStudents = "13";
+var totolNumberOfStudetns = Number(newStudents) + Number(oldStudents) 
+console.log(totolNumberOfStudetns, "total students");
+
+var a =20;
+var b= 30;
+var c= "40";
+var d =20;
+var e= 30;
+
+var sum = a + b + Number(c) + d + e;
+console.log(sum)
+
+// var age = Number(prompt("enter your age"));
+// console.log(typeof age, age)
+
+// parseInt
+
+var productPrice = 4588.99
+
+console.log(parseInt(productPrice))
+
+var amount = 4588.58;
+console.log(parseFloat(amount))
+
+
+
+
+
