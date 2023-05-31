@@ -88,20 +88,83 @@ if(day == 0){
   console.log("saturday")
 }
 
-var percentage = prompt("Enter your percentage ?");
+var percentage = Number(prompt("Enter your percentage ?"));
 
-if(percentage >= 90 && percentage <= 100 ){
-  console.log("O Grade")
-} else if(percentage >= 80 && percentage < 90 ){
-  console.log("A Grade")
-} else if(percentage >= 70 && percentage < 90 ){
-  console.log("B Grade")
-} else if(percentage >= 60 && percentage < 90 ){
-  console.log("C Grade")
-} else if(percentage >= 50 && percentage < 90 ){
-  console.log("D Grade")
-} else if(percentage >=0 && percentage < 50){
-  console.log("Failed")
-} else {
-  console.log("Please enter valid percentage")
+// if(percentage >= 90 && percentage <= 100 ){
+//   console.log("O Grade")
+// } else if(percentage >= 80 && percentage < 90 ){
+//   console.log("A Grade")
+// } else if(percentage >= 70 && percentage < 90 ){
+//   console.log("B Grade")
+// } else if(percentage >= 60 && percentage < 90 ){
+//   console.log("C Grade")
+// } else if(percentage >= 50 && percentage < 90 ){
+//   console.log("D Grade")
+// } else if(percentage >=0 && percentage < 50){
+//   console.log("Failed")
+// } else {
+//   console.log("Please enter valid percentage")
+// }
+
+switch(percentage){
+  case 100 : {
+      console.log("O grade")
+      break;
+  }
+  case 90 : {
+      console.log("A grade");
+      break;
+  }
+  default : {
+    console.log("please enter valid percentage")
+  }
 }
+
+
+const currentDate = new Date()
+const today = currentDate.getDay()
+console.log(today)
+
+var weekDay = ""
+
+switch(today){
+  case 0 : {
+    weekDay = "sunday"
+    console.log("sunday")
+    break;
+  }
+  case 1 : {
+    weekDay = "monday"
+    console.log("monday")
+    break
+  }
+  case 2 : {
+    weekDay = "tuesday"
+    console.log("tuesday")
+    break
+  }
+  case 3 : {
+    weekDay = "wednesday"
+    console.log("wednesday")
+    break
+  }
+  case 4 : {
+    weekDay = "thursday"
+    console.log("thursday")
+    break
+  }
+  case 5 : {
+    weekDay = "friday"
+    console.log("friday")
+    break
+  }
+  case 6 : {
+    weekDay = "saturday"
+    console.log("saturday")
+    break
+  }
+  
+}
+
+
+document.getElementById("day").innerHTML = weekDay
