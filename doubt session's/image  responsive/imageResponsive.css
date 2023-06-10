@@ -1,0 +1,36 @@
+.imageBlock img{
+  height: 200px;
+  width: 200px;
+}
+
+.imageBlock{
+  border: 1px solid green;
+  width: 200px;
+  padding: 20px;
+}
+
+.imageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap : 20px;
+}
+
+#menuBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobileNavItems{
+  display: none;
+}
+
+@media screen and (min-width : 768px) {
+  #icon{
+    display: none;
+  }
+  #mobileNavItems{
+    display: flex;
+    gap: 20px;
+  }
+}

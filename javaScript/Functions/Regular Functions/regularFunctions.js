@@ -68,3 +68,25 @@ var secondResult = add(12,27)
 var Total = firstResult + secondResult
 
 console.log(Total, "total value")
+
+// adding two numbers
+
+function addition(a, b, c){
+    console.log(a*a + b*b +c*c)
+}
+
+addition(5,4,6)
+
+function getTime(){
+  const date = new Date();
+  document.getElementById("show").style.display = "block"
+  document.getElementById("time").innerHTML = date;
+  document.getElementById("show").style.display = "none"
+  document.getElementById("hide").style.display = "block"
+}
+
+function hideTime(){
+  document.getElementById("time").style.display = "none"
+  document.getElementById("show").style.display = "block"
+  document.getElementById("hide").style.display = "none"
+}

@@ -1,0 +1,43 @@
+.bgImage{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTL71W2u3jfYvvp2MXCfvVwHoyM-cioxCZkA&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+
+
+.card{
+  background-color: transparent;
+  height: 200px;
+  background-color: white;
+  width: 200px;
+  border : 1px solid red;
+}
+
+
+@media screen and (min-width : 576px) {
+   .bgImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+   }
+}
+
+#tabs{
+  display: flex;
+  gap: 30px;
+}
+
+#secondContent{
+  display : none;
+}
+
+#thirdContent{
+  display: none;
+}

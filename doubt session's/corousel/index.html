@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image corousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="corousel.css">
+</head>
+<body>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item  imageSize">
+        <img src="data:image/jpeg;base64,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" alt="Los Angeles" class="d-block" style="width:100%">
+        <h1>Elephant</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum expedita, deserunt obcaecati tenetur harum quia atque exercitationem illo. Deserunt odio autem exercitationem quas quisquam voluptatum culpa quae dicta sunt.</p>
+      </div>
+      <div class="carousel-item active imageSize">
+        <img src="data:image/jpeg;base64,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" alt="Chicago" class="d-block" style="width:100%">
+        <h1>Weather</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum expedita, deserunt obcaecati tenetur harum quia atque exercitationem illo. Deserunt odio autem exercitationem quas quisquam voluptatum culpa quae dicta sunt.</p>
+      </div>
+      <div class="carousel-item imageSize">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEP6t3gyEodjhHviOz1fBlxN_lDf8_jDQKw&usqp=CAU" alt="New York" class="d-block" style="width:100%">
+        <h1>Dice</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum expedita, deserunt obcaecati tenetur harum quia atque exercitationem illo. Deserunt odio autem exercitationem quas quisquam voluptatum culpa quae dicta sunt.</p>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button> -->
+  </div>
+  
+  <!-- <div class="container-fluid mt-3">
+    <h3>Carousel Example</h3>
+    <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+  </div> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="corousel.js"></script>
+</body>
+</html>

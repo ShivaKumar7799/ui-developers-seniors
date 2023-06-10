@@ -1,0 +1,7 @@
+.imageSize img{
+  width: 100%;
+  height: 400px;
+}
+.imageSize{
+  border : 1px solid red;
+}
