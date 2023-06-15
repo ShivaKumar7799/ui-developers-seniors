@@ -10,7 +10,24 @@
   <!-- <button onclick="sayHello()" >Greetings</button> -->
    A : <input type="text" id="a" > <br >
    B : <input type="text" id="b" > <br >
-   <button onclick="add()" >Add</button>
+   <!-- <button onclick="add()" >Add</button>
+   <button onclick="subtract()" >subtract</button>
+   <button onclick="multiply()" >multiply</button>
+   <button onclick="division()" >division</button> <br> -->
+   <select name="operation" id="operation">
+    <option value="add">Addition</option>
+    <option value="subtract">Subtraction</option>
+    <option value="multiply">Multiplication</option>
+    <option value="division">Division</option>
+   </select>
+
+   <select name="outputType" id="outputType">
+    <option value="screen">Screen</option>
+    <option value="console">Console</option>
+    <option value="alert">Alert</option>
+   </select>
+
+   <button onclick="calculate()" >Calculate</button>
    <h2 id="result" ></h2>
   <script src="html.js"></script>
 </body>
