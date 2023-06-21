@@ -11,7 +11,7 @@ function startTimer(){
         document.getElementById("seconds").innerHTML = count % 60;
         document.getElementById("minutes").innerHTML = parseInt(count / 60) % 60;
         document.getElementById("hours").innerHTML = parseInt(count/3600)
-    }, 1000);
+    }, 10);
     document.getElementById("stopButton").style.display = "block"
     document.getElementById("resetButton").style.display = "block"
     document.getElementById("startButton").style.display = "none"
