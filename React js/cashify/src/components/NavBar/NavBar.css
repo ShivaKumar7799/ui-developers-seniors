@@ -1,0 +1,26 @@
+#navBar_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+
+.navbar_right_block{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_left_block{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_right_block button {
+    background-color: rgb(100, 218, 151);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+}
