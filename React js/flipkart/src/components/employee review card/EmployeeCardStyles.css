@@ -1,0 +1,5 @@
+.employee_card_container{
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+}
