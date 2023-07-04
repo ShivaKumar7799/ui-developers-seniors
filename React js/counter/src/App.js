@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Button from "./Components/Button";
+import CricketScore from "./Components/CricketScore";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,6 +41,9 @@ function App() {
       <button value={74574} onClick={handleCountChange} >74574</button>
       <button value={54545} onClick={handleCountChange} >54545</button>
       <button value={111111} onClick={handleCountChange} >111111</button> */}
+
+      <CricketScore />
+
     </div>
   );
 }
