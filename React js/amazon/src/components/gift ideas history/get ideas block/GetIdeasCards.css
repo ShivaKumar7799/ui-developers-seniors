@@ -1,0 +1,12 @@
+#getIdeasCardsContainer > p{
+    padding: 0;
+    margin: 0;
+}
+
+#productName:hover{
+    color: red;
+}
+
+#getIdeasCardsContainer {
+    width: 300px;
+}

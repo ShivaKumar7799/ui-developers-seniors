@@ -1,0 +1,38 @@
+#amazonLogo{
+    width: 150px;
+    position: relative;
+    top: 13px;
+}
+
+
+#amazonHeaderContainer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 25px;
+    padding: 10px 20px;
+}
+
+.headerBlocks{
+    display: flex;
+    flex-direction: column;
+}
+
+#amazonSearch{
+    flex: 1;
+    position: relative;
+}
+
+#amazonSearch > input{
+    width: 100%;
+    height: 35px;
+}
+
+#amazonSearch > img{
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}
