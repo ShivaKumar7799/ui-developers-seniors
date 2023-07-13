@@ -2,19 +2,22 @@ import './App.css';
 import Header from './components/Amazon header/AmazonHeader';
 import {AmazonFooter} from './components/Amazon Footer/AmazonFooter';
 import TopDeals from './components/TopDeals/TopDeals';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import GetIdeas from './components/gift ideas history/getIdeas';
+import axios from 'axios'
 
 function App() {
-  const [topDealsImages, setTopDealImages] = useState([ "https://images-eu.ssl-images-amazon.com/images/G/31/wireless_products/ssserene/weblab_wf/xcm_banners_2022_in_bau_wireless_dec_580x800_once3l_v2_580x800_in-en.jpg", 
-  "https://images-eu.ssl-images-amazon.com/images/G/31/tiyesum/N55/June/xcm_banners_2022_in_bau_wireless_dec_580x800_v1-n55-marchv2-mayv3-v4_580x800_in-en.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/nbshagun/op7july/xcm_banners_2022_in_bau_wireless_580x800_nordce2lite_j7_580x800_in-en.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/nbshagun/op7july/xcm_banners_2022_in_bau_wireless_dec_580x800_op11_j7_580x800_in-en.jpg",
- "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/nbshagun/op7july/xcm_banners_2022_in_bau_wireless_dec_580x800_op11_j7_580x800_in-en.jpg",
- "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Xiaomi/RedmiA2/GW/July/5thJuly/xcm_banners_2022_in_bau_wireless_dec_580x800-1_580x800_in-en.jpg" ,
- "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/nbshagun/op7july/xcm_banners_2022_in_bau_wireless_dec_580x800_op11rj7_580x800_in-en.jpg"             
-])
-const [mobileImage,setMobileImage] = useState("")
+  const [topDealsImages, setTopDealImages] = useState([])
+  const [mobileImage,setMobileImage] = useState("")
+
+  function getTopDealsData(){
+    // fetch("https://64a7ab7bdca581464b848b99.mockapi.io/topDealsImages").then((res) => res.json()  ).then(result => setTopDealImages(result)).catch(err => console.log(err))
+    axios.get("https://64a7ab7bdca581464b848b99.mockapi.io/topDealsImages").then(result => setTopDealImages(result.data))
+  }
+
+  useEffect(() => {
+    getTopDealsData()
+  },[])
 
   const addImageAddress = (event) => {
     // console.log(event.target.value)
@@ -24,7 +27,8 @@ const [mobileImage,setMobileImage] = useState("")
   const addProduct = () => {
     // console.log("product is added")
     // topDealsImages.push(mobileImage)
-    setTopDealImages([...topDealsImages,mobileImage])
+    // setTopDealImages([...topDealsImages,mobileImage])
+    axios.post("https://64a7ab7bdca581464b848b99.mockapi.io/topDealsImages",{ image : mobileImage }).then(() => getTopDealsData() ).catch(err => console.log(err))
   }
 
   return (
@@ -41,7 +45,7 @@ const [mobileImage,setMobileImage] = useState("")
         <TopDeals />
         <TopDeals />
         <TopDeals /> */}
-        {topDealsImages.map((item,index) => <TopDeals image = {item} /> )}
+        {topDealsImages.map((item,index) => <TopDeals image = {item.image} /> )}
       </div>
        <br />
         <input value={mobileImage} type='text' onChange={addImageAddress} /> <button onClick={addProduct} >Add Product</button>
