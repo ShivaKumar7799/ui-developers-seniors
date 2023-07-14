@@ -92,31 +92,31 @@ const students = [
         marks : [
             {
                 subjectName : "Telugu",
-                marks : 5
+                marks : 54
             },
             {
                 subjectName : "Hinid",
-                marks : 5
+                marks : 45
             },
             {
                 subjectName : "english",
-                marks : 5
+                marks : 35
             },
             {
                 subjectName : "Maths",
-                marks : 3
+                marks : 39
             },
             {
                 subjectName : "science",
-                marks : 3
+                marks : 38
             },
             {
                 subjectName : "socail",
-                marks : 3
+                marks : 39
             },
             {
                 subjectName : "drawing",
-                marks : 5
+                marks : 52
             }
         ]
     },
