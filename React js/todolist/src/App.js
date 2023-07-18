@@ -24,7 +24,6 @@ function App() {
      <input type="text" value={todo} placeholder = "Enter todo" onChange={handleTodoChange} />
      <button onClick={handleAddTodo} >Add Todo</button>
      <div id='todolist__contianer' >
-      {console.log(todoItems)}
        {todoItems.map((todoItem) => <Todolist key={todoItem.id} setTodoItems = {setTodoItems} todoItems = {todoItems} item = {todoItem} /> )}
      </div>
    </div>
